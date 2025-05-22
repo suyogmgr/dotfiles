@@ -23,6 +23,7 @@
     "custom/temperature",
     "clock"
   ],
+  
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,

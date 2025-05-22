@@ -1,12 +1,11 @@
-/* 全局设置 */
+
 * {
   font-family: "JetBrainsMono Nerd Font", Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
-  color: #dcdfe1;
+  color: #66c2ff;
 }
 
-/* 透明 Waybar 背景 */
 #waybar {
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -14,27 +13,24 @@
   margin: 1em 0;
 }
 
-/* 所有模块统一风格 */
 #workspaces,
 #window,
 #tray{
   /*background-color: rgba(29,31,46, 0.95);*/
   background-color: rgba(15,27,53,0.9);
-  padding: 4px 6px; /* 保持内部间距 */
-  margin-top: 6px; /* 外部间距增加 */
-  margin-left: 6px; /* 外部间距增加 */
-  margin-right: 6px; /* 外部间距增加 */
-  border-radius: 10px;
+  padding: 4px .85em;
+  margin: .3em .1em;  
+  border-radius: 16px;
   border-width: 0px;
 }
 
 #clock,
 #custom-power{
   background-color: rgba(15,27,53,0.9);
-  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-top: 6px; 
   margin-right: 6px;
   /*margin-bottom: 4px;*/
-  padding: 4px 2px; /* 保持内部间距 */
+  padding: 4px 2px; 
   border-radius: 0 10px 10px 0;
   border-width: 0px;
 }
@@ -42,10 +38,9 @@
 #network,
 #custom-lock{
   background-color: rgba(15,27,53,0.9);
-  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-top: 6px; 
   margin-left: 6px;
-  /*margin-bottom: 4px;*/
-  padding: 4px 2px; /* 保持内部间距 */
+  padding: 4px .4em; 
   border-radius: 10px 0 0 10px;
   border-width: 0px;
 }
@@ -59,9 +54,9 @@
 #memory,
 #cpu{
   background-color: rgba(15,27,53,0.9);
-  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-top: 6px; 
   /*margin-bottom: 4px;*/
-  padding: 4px 2px; /* 保持内部间距 */
+  padding: 4px 2px; 
   border-width: 0px;
 }
 
@@ -71,7 +66,7 @@
   padding-top: 0;
 }
 
-/* 鼠标悬停变亮一点 */
+
 #bluetooth:hover,
 #network:hover,
 /*#tray:hover,*/
@@ -87,10 +82,12 @@
 #custom-power:hover,
 /*#workspaces:hover,*/
 #window:hover {
-  background-color: rgba(70, 75, 90, 0.9);
+  background-color: #3A506B;
 }
 
-/* 工作区激活状态高亮 */
+/*background-color: rgba(70, 75, 90, 0.9);*/
+
+
 #workspaces button:hover{
   background-color: rgba(97, 175, 239, 0.2);
   padding: 2px 8px;
@@ -99,14 +96,13 @@
 }
 
 #workspaces button.active {
-  background-color: #61afef; /* 蓝色高亮 */
-  color: #ffffff;
-  padding: 2px 8px;
-  margin: 0 2px;
-  border-radius: 10px;
+  background-color: #3A506B; 
+  color: #fff;
+  margin: 0 8px;
+  border-radius: 8px;
 }
 
-/* 未激活工作区按钮 */
+
 #workspaces button {
   background: transparent;
   border: none;
@@ -118,15 +114,9 @@
 
 #window {
   font-weight: 300;
-  margin: 0 1em;
+  margin: .85em;
+  padding: .3em .75em;
 }
 
-#window.empty {
-  opacity: 0;
-  border: none;
-  background: none;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-}
+
 
