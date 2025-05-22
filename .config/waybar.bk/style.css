@@ -1,0 +1,100 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Arial, sans-serif;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 0.3em 1em;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+    background: none;
+    color: inherit;
+}
+
+#workspaces button {
+    background-color: #5f676a;
+    color: #ffffff;
+    margin: 0 3px;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #285577;
+}
+
+#workspaces button.urgent {
+    background-color: #900000;
+    color: #fff;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#pulseaudio,
+#tray,
+#mode,
+#idle_inhibitor,
+#window,
+#workspaces {
+    margin: 0.5em 1.2em;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+#idle_inhibitor {
+    font-size: 15px;
+    background-color: #333333;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+#idle_inhibitor.activated {
+    background-color: #285577;
+}
+
